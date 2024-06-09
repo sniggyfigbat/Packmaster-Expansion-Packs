@@ -1,0 +1,30 @@
+{
+  "${ModID}:PainfulGrowthPack": {
+    "TEXT": [
+      "Painful Growth",
+      "Grasp at more power than you can safely handle... and disregard that Growing Pain.",
+      "Sniggyfigbat"
+    ]
+  },
+  "${ModID}:ArtificerPackHat": {
+    "TEXT": [
+      "I promise you can still breathe. It's magic.",
+      "Large Crystal"
+    ]
+  },
+  "${ModID}:BlockEnchantModifier": {
+    "TEXT": [
+      " NL Gain "," Block."
+    ]
+  },
+  "${ModID}:LimitedGambleAction": {
+    "TEXT": [
+      "discard."
+    ]
+  },
+  "${ModID}:DrawEnchantModifier": {
+    "TEXT": [
+      " NL Draw "," card."," cards."
+    ]
+  }
+}

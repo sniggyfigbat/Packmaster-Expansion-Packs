@@ -1,0 +1,55 @@
+{
+  "${ModID}:SurgingDefend": {
+    "NAME": "Surging Defend",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !${ModID}:m2! Strength until the end of the turn. NL Gain !M! ${ModID}:Growing\u00a0Pain."
+  },
+  "${ModID}:Gardening": {
+    "NAME": "Gardening",
+    "DESCRIPTION": "Channel 1 ${ModID}:Seed.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Channel 1 ${ModID}:Seed."
+  },
+  "${ModID}:Germinate": {
+    "NAME": "Germinate",
+    "DESCRIPTION": "Gain !B! Block. NL Next turn, gain !B! Block. NL Shuffle a *Boom *and *Bust into your draw pile.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Next turn, gain !B! Block. NL Shuffle a *Boom *and *Bust+ into your draw pile."
+  },
+  "${ModID}:DispersalStrike": {
+    "NAME": "Dispersal Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !${ModID}:m2! Dexterity until the end of the turn. NL Gain !M! ${ModID}:Growing\u00a0Pain. NL Channel 1 ${ModID}:Seed."
+  },
+  "${ModID}:MarginalGain": {
+    "NAME": "Marginal Gain",
+    "DESCRIPTION": "Gain !B! Block. NL Reduce debuffs by 1. NL Gain !M! ${ModID}:Growing\u00a0Pain."
+  },
+  "${ModID}:RampantGrowth": {
+    "NAME": "Rampant Growth",
+    "DESCRIPTION": "Gain !B!x2 Block. NL Gain !M! ${ModID}:Growing\u00a0Pain."
+  },
+  "${ModID}:Engulf": {
+    "NAME": "Engulf",
+    "DESCRIPTION": "The first time you would gain a debuff each turn, gain one fewer but gain 2 ${ModID}:Growing\u00a0Pain instead."
+  },
+  "${ModID}:ExplosiveBurst": {
+    "NAME": "Explosive Burst",
+    "DESCRIPTION": "Gain !M! ${ModID}:Growing\u00a0Pain. NL Deal damage equal to your ${ModID}:Growing\u00a0Pain, !${ModID}:m2! times."
+  },
+  "${ModID}:RecklessEscalation": {
+    "NAME": "Reckless Escalation",
+    "DESCRIPTION": "Whenever you play an Attack, gain 1 temporary Strength and 1 ${ModID}:Growing\u00a0Pain.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play an Attack, gain 1 temporary Strength and 1 ${ModID}:Growing\u00a0Pain."
+  },
+  "${ModID}:BoomAndBust": {
+    "NAME": "Boom and Bust",
+    "DESCRIPTION": "Unplayable. NL When drawn, draw !M! card. NL At the end of your turn, gain 5 ${ModID}:Growing\u00a0Pain.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn, draw !M! cards. NL At the end of your turn, gain 5 ${ModID}:Growing\u00a0Pain."
+  },
+  "${ModID}:EndlessFlexibility": {
+    "NAME": "Endless Flexibility",
+    "DESCRIPTION": "At the start of each turn, add a *New *Growth to hand."
+  },
+  "${ModID}:NewGrowth": {
+    "NAME": "New Growth",
+    "DESCRIPTION": "Gain Block equal to your ${ModID}:Growing\u00a0Pain. NL Ethereal. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain Block equal to twice your ${ModID}:Growing\u00a0Pain. NL Ethereal. NL Exhaust."
+  }
+}

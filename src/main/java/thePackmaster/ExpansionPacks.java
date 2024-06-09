@@ -15,10 +15,7 @@ import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
 import thePackmaster.cards.pickthemallpack.GrabAndGo;
 import thePackmaster.hats.HatMenu;
 import thePackmaster.hats.specialhats.InstantDeathHat;
-import thePackmaster.packs.CthulhuPack;
-import thePackmaster.packs.FrostPack;
-import thePackmaster.packs.InstantDeathPack;
-import thePackmaster.packs.SpheresPack;
+import thePackmaster.packs.*;
 import thePackmaster.patches._expansionpacks.RelicParentPackExpansionPatches;
 import thePackmaster.patches.overwhelmingpack.MakeRoomPatch;
 import thePackmaster.patches.sneckopack.EnergyCountPatch;
@@ -100,6 +97,9 @@ public class ExpansionPacks implements
         // MariDebuffPack: Tracking player power list after each modification
         // cannot only track when powers are removed due to cases such as negative strength becoming positive
         DebuffLossManager.onPowersModified();
+
+        // PainfulGrowthPack: The Seed orb needs to know when Growing Pain stacks change.
+        PainfulGrowthPack.onPowersModified();
     }
 
     public static AbstractStance getPackmasterStanceInstance(boolean useCardRng) {

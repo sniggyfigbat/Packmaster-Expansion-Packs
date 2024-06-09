@@ -1,0 +1,12 @@
+[
+  {
+  "PROPER_NAME": "Seed",
+  "NAMES": ["seed"],
+  "DESCRIPTION": "Orb: Adds #yGrowing #yPain each turn and deals damage to a random enemy. When #yEvoked [REMOVE_SPACE], removes all #yGrowing #yPain from the player and deals that much damage to ALL enemies."
+  },
+  {
+    "PROPER_NAME": "Growing Pain",
+    "NAMES": ["growing\u00a0pain"],
+    "DESCRIPTION": "Whenever you fully block damage, increases by 1. When it reaches 10 or more, immediately remove #yGrowing #yPain [REMOVE_SPACE], deal 10 damage to EVERYONE, and gain 1 #yStrength [REMOVE_SPACE]."
+  }
+]

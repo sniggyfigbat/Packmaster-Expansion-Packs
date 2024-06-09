@@ -1,0 +1,23 @@
+{
+  "${ModID}:GrowingPainPower": {
+    "NAME": "Growing Pain",
+    "DESCRIPTIONS": [ "Whenever you fully block damage, increases by 1. When it reaches 10 or more, immediately remove #yGrowing #yPain, deal 10 damage to EVERYONE, and gain 1 #yStrength." ]
+  },
+  "${ModID}:EngulfPower": {
+    "NAME": "Engulf",
+    "DESCRIPTIONS": [
+      "The first #b", " time", " times", " ( [REMOVE_SPACE]#b", " left)", " you would gain a debuff each turn, gain one fewer but gain 2 #yGrowing #yPain instead."
+    ]
+  },
+  "${ModID}:RecklessEscalationPower": {
+    "NAME": "Reckless Escalation",
+    "DESCRIPTIONS": [ "Whenever you play an Attack, gain ", " temporary Strength and ", " #yGrowing #yPain." ]
+  },
+  "${ModID}:EndlessFlexibilityPower": {
+    "NAME": "Endless Flexibility",
+    "DESCRIPTIONS": [
+      "At the start of each turn, add a #yNew #yGrowth to hand.",
+      "At the start of each turn, add ", " #yNew #yGrowth cards to hand."
+    ]
+  }
+}

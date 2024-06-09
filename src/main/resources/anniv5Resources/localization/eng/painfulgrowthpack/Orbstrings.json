@@ -1,0 +1,9 @@
+{
+  "${ModID}:Seed": {
+    "NAME": "Seed",
+    "DESCRIPTION": [
+      "#yPassive: Add #b{0} #yGrowing #yPain, then deals that much damage to a random enemy. NL #yEvoke: Removes all #yGrowing #yPain and deals that much damage to ALL enemies.",
+      "#yPassive: Add #b{0} #yGrowing #yPain [REMOVE_SPACE], then deals that much damage to a random enemy. NL #yEvoke: Removes all #yGrowing #yPain ( [REMOVE_SPACE]#b{1} [REMOVE_SPACE]) and deals that much damage to ALL enemies."
+    ]
+  }
+}
