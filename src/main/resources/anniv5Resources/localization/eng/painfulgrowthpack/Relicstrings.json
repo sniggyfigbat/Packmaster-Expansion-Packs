@@ -1,0 +1,16 @@
+{
+  "${ModID}:SeedPack": {
+    "NAME": "Seed Pack",
+    "FLAVOR": "Packed with potential!",
+    "DESCRIPTIONS": [
+      "At the start of each combat #yChannel 1 #y${ModID}:Seed."
+    ]
+  },
+  "${ModID}:Fertiliser": {
+    "NAME": "Fertiliser",
+    "FLAVOR": "Give yourself a boost!",
+    "DESCRIPTIONS": [
+      "Whenever you would deal 10 to 14 damage, increase it to 15."
+    ]
+  }
+}

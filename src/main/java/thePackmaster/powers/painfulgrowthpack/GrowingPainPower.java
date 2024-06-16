@@ -5,13 +5,17 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.actions.utility.UseCardAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import thePackmaster.powers.AbstractPackmasterPower;
 import thePackmaster.util.Wiz;
 
@@ -42,13 +46,36 @@ public class GrowingPainPower extends AbstractPackmasterPower {
     }
 
     @Override
-    public int onAttacked(DamageInfo info, int damageAmount) {
-        if (damageAmount <= Wiz.p().currentBlock) {
-            this.flashWithoutSound();
-            Wiz.applyToSelfTop(new GrowingPainPower(1));
-            updateDescription();
+    public void onUseCard(AbstractCard card, UseCardAction action) {
+        super.onUseCard(card, action);
+
+        if (card.freeToPlay() || card.cost < -1) {
+            return;
         }
-        return damageAmount;
+
+        int spentOnCard = 0;
+        if (card.cost == -1) {
+            spentOnCard = EnergyPanel.totalCount;
+        }
+        else {
+            // This works because the function's called before the energy is actually spent.
+            spentOnCard = Math.min(EnergyPanel.totalCount, card.costForTurn);
+        }
+
+        if (spentOnCard > 0) {
+            GrowingPainPower t = this;
+            final int s = spentOnCard;
+            atb(new AbstractGameAction() {
+                @Override
+                public void update() {
+                    t.flashWithoutSound();
+                    Wiz.applyToSelfTop(new GrowingPainPower(s));
+                    updateDescription();
+
+                    this.isDone = true;
+                }
+            });
+        }
     }
 
     @Override

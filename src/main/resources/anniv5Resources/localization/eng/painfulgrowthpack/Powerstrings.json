@@ -1,7 +1,7 @@
 {
   "${ModID}:GrowingPainPower": {
     "NAME": "Growing Pain",
-    "DESCRIPTIONS": [ "Whenever you fully block damage, increases by 1. When it reaches 10 or more, immediately remove #yGrowing #yPain, deal 10 damage to EVERYONE, and gain 1 #yStrength." ]
+    "DESCRIPTIONS": [ "Whenever you play a card, increases equal to the energy spent. When it reaches 10 or more, immediately remove #yGrowing #yPain, deal 10 damage to EVERYONE, and gain 1 #yStrength." ]
   },
   "${ModID}:EngulfPower": {
     "NAME": "Engulf",
